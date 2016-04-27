@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2012, Mauro Scomparin
+* Copyright (c) 2016, Mauro Scomparin
 * All rights reserved.
 *
 * Redistribution and use in source and binary forms, with or without
@@ -24,10 +24,10 @@
 * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 *
-* File:			LM4F.ld.
-* Author:		Mauro Scomparin <http://scompoprojects.worpress.com>.
+* File:			TM4C.ld.
+* Author:		Rafael Dias <rdmeneze@gmail.com>.
 * Version:		1.0.0.
-* Description:	Linker description file for LM4FXXX microcontrollers.
+* Description:	Linker description file for TM4C129X microcontrollers.
 */
 
 
