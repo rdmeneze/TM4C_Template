@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2012, Mauro Scomparin
+* Copyright (c) 2012, Rafael Dias
 * All rights reserved.
 *
 * Redistribution and use in source and binary forms, with or without
@@ -9,14 +9,14 @@
 *     * Redistributions in binary form must reproduce the above copyright
 *       notice, this list of conditions and the following disclaimer in the
 *       documentation and/or other materials provided with the distribution.
-*     * Neither the name of Mauro Scomparin nor the
+*     * Neither the name of Rafael Dias nor the
 *       names of its contributors may be used to endorse or promote products
 *       derived from this software without specific prior written permission.
 *
-* THIS SOFTWARE IS PROVIDED BY Mauro Scomparin ``AS IS'' AND ANY
+* THIS SOFTWARE IS PROVIDED BY Rafael Dias ``AS IS'' AND ANY
 * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-* DISCLAIMED. IN NO EVENT SHALL Mauro Scomparin BE LIABLE FOR ANY
+* DISCLAIMED. IN NO EVENT SHALL Rafael Dias BE LIABLE FOR ANY
 * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
 * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
 * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
@@ -25,7 +25,7 @@
 * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 *
 * File:			LM4F_startup.c.
-* Author:		Mauro Scomparin <http://scompoprojects.worpress.com>.
+* Author:		Rafael Dias <rdmeneze@gmail.com>.
 * Version:		1.0.0.
 * Description:	LM4F120H5QR startup code.
 */
@@ -64,7 +64,7 @@ extern unsigned long _end_bss;
 
 // NVIC ISR table
 // the funny looking void(* myvectors[])(void) basically it's a way to make cc accept an array of function pointers.
-__attribute__ ((section(".nvic_table")))
+__attribute__ ((section(".isr_vector")))
 void(* myvectors[])(void) = {
 	// This are the fixed priority interrupts and the stack pointer loaded at startup at R13 (SP).
 	//												VECTOR N (Check Datasheet)

@@ -60,7 +60,7 @@ SECTIONS
     .text : 
     {
     	/*_start_text = .;	/* This is an index to the beginning of .text segment. */
-    	KEEP(*(.nvic_table)) /* I should keep the NVIC ISR Table because it's needed by the processor to start. */
+    	KEEP(*(.isr_vector)) /* I should keep the NVIC ISR Table because it's needed by the processor to start. */
         *(.text.*)			/* This contains the code after the ISR table. */
         *(.rodata.*)    	/* Read only data.  */
         _end_text = .;		/* This is an index to the end of .text segment. */
