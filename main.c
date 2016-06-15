@@ -86,7 +86,7 @@ main(void)
         //
         // Turn off the LED.
         //
-        GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, 0x0);
+        GPIOPinWrite(GPIO_PORTN_BASE, GPIO_PIN_0, ~GPIO_PIN_0);
 
         //
         // Delay for a bit.
